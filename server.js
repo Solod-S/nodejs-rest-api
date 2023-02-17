@@ -4,7 +4,7 @@ const chalk = require("chalk");
 
 // const { DB_HOST, PORT = 3000 } = process.env;
 const { DB_HOST } = process.env;
-export const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 const errorMsg = chalk.bgKeyword("white").redBright;
 const successMsg = chalk.bgKeyword("green").white;
 
