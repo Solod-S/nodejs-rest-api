@@ -12,7 +12,7 @@ mongoose
     console.log(successMsg("Database connection successful"));
   })
   .then(() =>
-    app.listen(PORT || 3000, "0.0.0.0", () => {
+    app.listen(PORT, () => {
       console.log(successMsg(`Server running. Use our API on port: ${PORT}`));
     })
   )
