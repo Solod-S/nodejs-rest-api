@@ -2,9 +2,7 @@ const app = require("./app");
 const mongoose = require("mongoose");
 const chalk = require("chalk");
 
-// const { DB_HOST, PORT = 3000 } = process.env;
-const { DB_HOST } = process.env;
-const PORT = process.env.PORT || 3000;
+const { DB_HOST, PORT = 3000 } = process.env;
 const errorMsg = chalk.bgKeyword("white").redBright;
 const successMsg = chalk.bgKeyword("green").white;
 
@@ -14,7 +12,7 @@ mongoose
     console.log(successMsg("Database connection successful"));
   })
   .then(() =>
-    app.listen(PORT, () => {
+    app.listen(PORT || 3000, "0.0.0.0", () => {
       console.log(successMsg(`Server running. Use our API on port: ${PORT}`));
     })
   )
