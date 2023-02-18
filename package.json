@@ -2,7 +2,7 @@
   "name": "nodejs-rest-api",
   "main": "index.js",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "test": "jest ",
     "start": "node ./api/index.js",
