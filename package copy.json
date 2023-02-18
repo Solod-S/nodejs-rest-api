@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "test": "jest ",
-    "start": "node ./server.js",
-    "start:dev": "nodemon ./server.js",
+    "start": "node server.js",
+    "start:dev": "nodemon server.js",
     "lint": "eslint **/*.js",
     "lint:fix": "eslint --fix **/*.js"
   },
